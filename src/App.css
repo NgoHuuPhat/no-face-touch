@@ -5,30 +5,46 @@
   justify-content: center;
 }
 
+.main.touched {
+  background-color: #ffcccc;
+}
+
 .video {
+  margin-top: 50px;
   width: 480px;
   height: 360px;
   background-color: #333;
 }
 
 .control {
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 10px 25px;
   margin: 5px;
+  background-color: white;
+  font-weight: bold;
   font-size: 1 rem;
-  background-color: #007bff;
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
+.btn:active {
+  background-color: #bfbfbf;
+}
+
 .video {
   transform: scaleX(-1);
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
 }

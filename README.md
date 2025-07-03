@@ -1,12 +1,44 @@
-# React + Vite
+# 🤚 No Face Touch - AI Hand Detection App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI application using TensorFlow.js and React to detect when you touch your face. Helps build the habit of not touching your face.
 
-Currently, two official plugins are available:
+## 🎯 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- AI detection with TensorFlow.js and MobileNet
+- Real-time webcam monitoring
+- Audio alerts and visual feedback
+- 3-step training process
 
-## Expanding the ESLint configuration
+## 🚀 Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone <repository-url>
+cd no-face-touch
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`
+
+**Requirements:** Node.js 16+, Webcam, WebGL-supported browser
+
+## 🎮 How to Use
+
+1. **Train "Not touching"**: Keep hands away from face, click "Start"
+2. **Train "Touching"**: Bring hand near face, click "Continue" 
+3. **Monitor**: Click "Start" to begin detection
+
+## 🔧 Configuration
+
+```javascript
+const TRAINING_TIMES = 50          // Training samples
+const TOUCHED_CONFIDENCE = 0.8     // Detection confidence
+```
+
+## ‍💻 Author
+
+**Ngô Hữu Phát** - BE Developer
+
+---
+
+⭐ **Star this project if helpful!** ⭐
